@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/be6ef7a374.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/sidebar.css">
+        <link rel="stylesheet" href="/css/table2.css">
+        <link rel="stylesheet" href="/css/html/detailLong.css">
+        <title>History</title>
+    </head>
+    <body>
+        <div class="sidebar active">
+            <div class="toggle-btn">
+                <i class="fas fa-bars"></i>
+                <h1>Order History</h1>
+            </div>
+            <div class="headLine"></div>
+            <div class="links">
+                <div class="tittle">
+                    <p>Menu</p>
+                </div>
+                <li>
+                    <a href="profile.html">
+                        <i class="fas fa-user"></i>
+                        Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="history.html">
+                        <i class="fas fa-history"></i>
+                        History
+                    </a>
+                </li>
+                <li>
+                    <a href="addOrder.html">
+                        <i class="far fa-plus-square"></i>
+                        Add new order
+                    </a>
+                </li>
+                <li>
+                    <a href="home.html">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fas fa-clipboard"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="profile">
+                    <a href="login.html">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Logout
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="main">
+            <div class="detail">
+                <div class="container">
+                    <h2 class="order_id">ID: BJE290012KLOP</h2>
+                    <p class="dateTime">7 July 2023 | 20.00</p>
+                    <p class="notes">Note: lorem ipsum</p>
+                    <div>
+                        <h3>Items</h3>
+                        <h3>Quantities</h3>
+                        <h3>Location</h3>
+                    </div>
+                </div>
+                <div class="container">
+                    <p class="ta" id="client_name">Client: Budianto</p>
+                    <p class="ta" id="eta">Arrival: 8 July 2023 | 10.00</p>
+                    <div class="items">
+                        <p class="itemsList">Ayam Goyeng</p>
+                        <p class="jumlah">10</p>
+                        <p class="gedung">Building A, Aisle A, Number A-01</p>
+                    </div>
+                </div>
+            </div>
+            <div class="table-section">
+                <table>
+                    <thead>
+                        <tr class="index" id="index">
+                            <th></th>
+                            <td>Location 1</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="shopName">
+                            <th>Name</th>
+                            <td>Budianto</td>
+
+                        </tr>
+                        <tr class="address">
+                            <th>Address</th>
+                            <td>Jln. BBB no.16</td>
+                        </tr>
+                        <tr class="date">
+                            <th>Date</th>
+                            <td>2023-11-05</td>
+                        </tr>
+                        <tr class="quantities">
+                            <th>Qts</th>
+                            <td>10</td>
+                        </tr>
+                        <tr class="time">
+                            <th class="last">Time</th>
+                            <td>10:00:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="detail">
+                <div class="container">
+                    <h3>Weight</h3>
+                    <h3>Price</h3>
+                    <h3>Rent Driver</h3>
+                    <h3>Driver</h3>
+                    <h3>Truck</h3>
+                    <h3>Virtual Account</h3>
+                </div>
+                <div class="container2">
+                    <label class="berat">10</label><span>Kg</span>
+                    <p class="paid">Rp 100.000</p>
+                    <p class="rentDriver">Yes</p>
+                    <p class="driver">Udin</p>
+                    <p class="plat">L 1010 AY</p>
+                    <i class="far fa-clone"></i><label class="va">00128731212323</label>
+                </div>
+            </div>
+            <div class="btn-field">
+                <button type="button">Go Home</button>
+            </div>
+        </div>
+        <script src="/js/style/sidebar.js"></script>
+        <script type="module" src="/js/fetch/historyLong.js"></script>
+    </body>
+</html>

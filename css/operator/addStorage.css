@@ -1,0 +1,95 @@
+.sidebar.active .headLine {
+    position: relative;
+    height: 1px;
+    background: var(--line);
+    top: 60px;
+    left: 17.5rem;
+    width: calc(78vw - 20px);
+    transition: all 300ms ease-in-out;
+    z-index: 2;
+}
+
+.sidebar .headLine {
+    position: relative;
+    height: 1px;
+    background: var(--line);
+    top: 60px;
+    left: 17.5rem;
+    width: calc(98vw - 60px);
+    transition: all 300ms ease-in-out;
+    z-index: 2;
+}
+
+.containers {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container .Nama_Gedung {
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.container .alamat {
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.container .category {
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.container input {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    width: 30rem;
+    padding: 8px 4px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.container .temp {
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 8rem;
+    margin-right: 8px;
+    text-align: right;
+}
+
+.container label {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.container p {
+    font-size: 12px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.container .btn-field {
+    text-align: center;
+}
+
+.container .btn-field button{
+    position: relative;
+    border: none;
+    color: white;
+    background: var(--cold);
+    width: 50%;
+    height: 50px;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 33px;
+    cursor: pointer;
+    margin-top: 16px;
+}

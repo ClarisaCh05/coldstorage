@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form class="form">
+            <input type="file" id="photo" name="photo" accept=".png">
+            <button type="button" class="submit">Submit</button>
+        </form>
+        <script>
+            const photoInput = document.querySelector('#photo');
+            const submit = document.querySelector('.submit');
+            const form = document.querySelector(".form");
+            const folder = "user"
+            try {
+                submit.addEventListener("click", async (e) => {
+                    e.preventDefault()
+
+                    const formData = new FormData(form);
+                    // formData.append("photo", photoInput.files)
+                    // formData.append("folder", folder)
+                    // formData.append("id", 6)
+                    const object = Object.entries(formData);
+                    for (const entry of formData.entries()) {
+                        console.log(entry[0], entry[1]);
+                    }
+
+                    const selectedFiles = photoInput.files;
+
+                    if (selectedFiles.length > 0) {
+                        // Access the first selected file (if there are multiple)
+                        const selectedFile = selectedFiles[0];
+
+                        // Log the file name
+                        console.log('Selected file name:', selectedFile.name);
+
+                        // You can also access other file properties like size, type, and last modified date
+                        console.log('File size:', selectedFile.size);
+                        console.log('File type:', selectedFile.type);
+                        console.log('Last modified:', selectedFile.lastModified);
+
+                        // Note that you can't directly access the file path for security reasons.
+                    } else {
+                        console.log('No file selected');
+                    }
+
+                    // const dataFoto = {
+                    //     folder: "user",
+                    //     photo: photoInput.files,
+                    //     id: "6"
+                    // }
+
+                    // console.log("data foto", dataFoto)
+
+                    const response = await fetch(`http://116.68.252.201:1945/uploadFoto/6?id=6&folder=user`, {
+                        method: 'POST',
+                        body: formData
+                    });
+
+                    const result = await response.json();
+                    console.log(result);
+
+                    if (response.status === 200) {
+                        window.alert("Photo Upload Success");
+                        document.getElementById("success").style.display = "block";
+                    }
+                })
+
+            } catch (error) {
+                console.error(error)
+            }
+        </script>
+    </body>
+</html>

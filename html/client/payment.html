@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/be6ef7a374.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/sidebar.css">
+        <link rel="stylesheet" href="/css/html/payment.css">
+        <title>Payment</title>
+    </head>
+    <body>
+        <div class="sidebar active">
+            <div class="toggle-btn">
+                <i class="fas fa-bars"></i>
+                <h1>Payment</h1>
+            </div>
+            <div class="headLine"></div>
+            <div class="links">
+                <div class="tittle">
+                    <p>Menu</p>
+                </div>
+                <li>
+                    <a href="profile.html">
+                        <i class="fas fa-user"></i>
+                        Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="history.html">
+                        <i class="fas fa-history"></i>
+                        History
+                    </a>
+                </li>
+                <li>
+                    <a href="addOrder.html">
+                        <i class="far fa-plus-square"></i>
+                        Add new order
+                    </a>
+                </li>
+                <li>
+                    <a href="home.html">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="/html/operator/dashboard.html">
+                        <i class="fas fa-clipboard"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="profile">
+                    <a href="login.html">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Logout
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="main">
+            <div class="client">
+                <label>Client</label>
+                <i class="fas fa-pen"></i>
+                <input type="text" class="nama">
+            </div>
+            <div class="payLater">
+                <label>Pay Later</label>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <form class="pembayaran">
+                <div class="date">
+                    <p>Set Date</p>
+                    <input type="date" class="jatuh_tempo" name="Jatuh_Tempo">
+                </div>
+                <div class="paymentMethod">
+                    <h2>Payment Method</h2>
+                    <div class="line"></div>
+                    <div class="methods">
+                        <div class="method">
+                            <div>
+                                <input type="radio" id="credit" name="Jenis" value="credit" checked>
+                                <label for="credit">
+                                    <i class="fas fa-credit-card" id="grey"></i>
+                                    <p>Credit</p>
+                                </label>
+                            </div>
+                            <div>
+                                <input type="radio" id="debit" name="Jenis" value="debit" checked>
+                                <label for="debit">
+                                    <i class="far fa-credit-card" id="grey"></i>
+                                    <p>Debit</p>
+                                </label>
+                            </div>
+                            <div>
+                                <input type="radio" id="cod" name="Jenis" value="cod" checked>
+                                <label for="cod">
+                                    <i class="fas fa-wallet" id="grey"></i>
+                                    <p>COD</p>
+                                </label>
+                            </div>
+                            <div>
+                                <input type="radio" id="other" name="Jenis" value="terminate" checked>
+                                <label for="other">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                    <p>Others</p>
+                                </label>
+                            </div>  
+                        </div>
+                        <div class="totals">
+                            <div class="payment-field">
+                                <div>
+                                    <p class="total">Total</p>
+                                    <p class="paid">Total Paid</p>
+                                    <p class="notes"></p>
+                                </div>
+                                <div>
+                                    <input type="number" class="jumlah" name="Jumlah" min="0">
+                                    <input type="number" class="dibayar" name="Dibayar" min="0" value="0">
+                                </div>
+                            </div>
+                            <div id="btn-field">
+                                <button type="submit" id="submitForm">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script src="/js/style/sidebar.js"></script>
+        <script type="module" src="/js/payment.js"></script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "sora";
+    src: url("/Sora/Sora-VariableFont_wght.ttf");
+}
+
+* {
+    font-family: sora;
+}
+
+:root {
+    --cold: #6ad6f9;
+    --text: #484848;
+    --util: #747474;
+    --warning: #F55349;
+    --border: #545454;
+    --text2: #ababab;
+    --text3: #505050;
+    --text4: #6f6f6f;
+    --text5: #969696;
+    --text6: #676767;
+    --canvas: #d9d9d9;
+    --box: #d7d7d7;
+    --true: #1ABC00;
+    --up: #4AFF72;
+    --wrong: #FF0606;
+    --shelf: #d9d9d9;
+    --shelf2: #F55349;
+    --border: #dadada;
+    --border2: #4c4c4c;
+    --border3: #c0c0c0;
+    --bg: #f4f4f4;
+    --intro: #7FFFD4;
+    --important: #F08080;
+    --faq: #FFFF00;
+    --annouce: #EE82EE;
+    --line: #b9b9b9;
+}

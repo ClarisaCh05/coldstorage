@@ -1,0 +1,73 @@
+.main .addUser {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.main .addUser p {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.main .addUser input {
+    width: 90%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 4px;
+    margin-bottom: 32px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.main .addUser .role {
+    margin-top: 16px;
+}
+
+.main .addUser select {
+    width: 90%;
+    margin-bottom: 16px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: var(--cold);
+    font-weight: 600;
+    font-size: 18px;
+    padding: 4px;
+}
+
+.main .addUser #photo {
+    display: none;
+}
+
+.main .addUser label {
+    display: block;
+    border: 1px dashed black;
+    border-radius: 8px;
+    width: 90%;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+    cursor: pointer;
+}
+
+.main .btn-field {
+    text-align: center;
+}
+
+.main .btn-field button{
+    position: relative;
+    border: none;
+    color: white;
+    background: var(--cold);
+    width: 50%;
+    height: 60px;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 33px;
+    box-shadow: 0px 3px 4px 1px #b4b1b1;
+    cursor: pointer;
+    margin-bottom: 16px;
+    margin-top: 24px;
+}

@@ -1,0 +1,64 @@
+.sidebar.active .headLine {
+    position: relative;
+    height: 1px;
+    background: black;
+    top: 60px;
+    left: 17.5rem;
+    width: calc(78vw - 20px);
+    transition: all 300ms ease-in-out;
+    z-index: 2;
+}
+
+.sidebar .headLine {
+    position: relative;
+    height: 1px;
+    background: black;
+    top: 60px;
+    left: 17.5rem;
+    width: calc(98vw - 60px);
+    transition: all 300ms ease-in-out;
+    z-index: 2;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.container .detail div {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.container .detail p {
+    margin-bottom: 8px;
+}
+
+.container .detail label {
+    color: var(--cold);
+    font-weight: 600;
+    margin-right: 16px;
+}
+
+.container .detail a {
+    margin-left: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--cold);
+}
+
+.container .detail .loc-detail {
+    margin-top: 8px;
+}
+
+.container .detail .payment-p {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8px, 120px));
+    margin-bottom: 0;
+}
+
+.container .detail .payment-label {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8px, 120px));
+    margin-top: 0;
+}

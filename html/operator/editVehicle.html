@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/be6ef7a374.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/sidebar.css">
+        <link rel="stylesheet" href="/css/operator/addVehicle.css">
+        <title>Add Vehicle</title>
+    </head>
+    <body>
+        <div class="sidebar active">
+            <div class="toggle-btn">
+                <i class="fas fa-bars"></i>
+                <h1>Add Data Vehicle</h1>
+            </div>
+            <div class="headLine"></div>
+            <div class="links">
+                <div class="tittle">
+                    <p>Menu</p>
+                </div>
+                <li>
+                    <a href="stakeholders.html">
+                        <i class="fas fa-user"></i>
+                        Stakeholders
+                    </a>
+                </li>
+                <li>
+                    <a href="communityHome.html">
+                        <i class="fas fa-users"></i>
+                        Community
+                    </a>
+                </li>
+                <li>
+                    <a href="userManagement.html">
+                        <i class="far fa-id-badge"></i>
+                        Users
+                    </a>
+                </li>
+                <li>
+                    <a href="vehichleManagement.html">
+                        <i class="fas fa-truck"></i>
+                        Vehicles
+                    </a>
+                </li>
+                <li>
+                    <a href="addStorage.html">
+                        <i class="fas fa-warehouse"></i>
+                        Storage
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fas fa-home"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="report.html">
+                        <i class="fas fa-clipboard"></i>
+                        Report
+                    </a>
+                </li>
+                <li class="profile">
+                    <a href="home.html">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Logout
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="main">
+            <form class="addVehicle">
+                <div>
+                    <p>Type</p>
+                    <p>Brand</p>
+                    <p>Max weight</p>
+                </div>
+                <div>
+                    <input type="text" name="Type">
+                    <br>
+                    <input type="text" name="Merk">
+                    <br>
+                    <input type="number" name="Max_Weight" id="weight"><span>Kg</span>
+                    <br>
+                </div>
+                <div>
+                    <p id="color">Colour</p>
+                    <p id="year">Year</p>
+                    <p>License Plate</p>
+                    <p>Driver</p>
+                </div>
+                <div>
+                    <input type="text" name="Color">
+                    <input type="text" name="Year">
+                    <input type="text" name="Plat">
+                    <select class="form-control" name="User_Id">
+                        
+                    </select>
+                    <div class="btn-field">
+                        <button type="submit" id="submit">Save</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script src="/js/style/sidebar.js"></script>
+        <script type="module" src="/js/post/editVehicle.js"></script>
+    </body>
+</html>

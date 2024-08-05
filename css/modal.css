@@ -1,0 +1,146 @@
+.modal-loc {
+    width: 20rem;
+    height: 50%;
+    position: fixed;
+    top: 60%; /* Vertical centering */
+    left: 50%; /* Horizontal centering */
+    transform: translate(-50%, -50%); /* Centering using transform */
+    background-color: white; /* Add your desired background color */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it's on top of other elements */
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.modal-loc h2 {
+    color: var(--cold);
+}
+
+.modal-loc .line {
+    background: var(--text2);
+    height: 1px;
+}
+
+#closeModalBtn {
+    position: relative;
+    float: right;
+    bottom: 50px;
+    border: none;
+    background: none;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.modal-loc .location {
+    margin-top: 8px;
+    color: var(--text2);
+    text-align: right;
+}
+
+.modal-items-container {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal {
+    width: 20rem;
+    height: 50%;
+    position: fixed;
+    top: 50%; /* Vertical centering */
+    left: 50%; /* Horizontal centering */
+    transform: translate(-50%, -50%); /* Centering using transform */
+    background-color: white; /* Add your desired background color */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it's on top of other elements */
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.modal .line {
+    background: var(--text2);
+    height: 1px;
+}
+
+.modal-items-container.hidden {
+    display: none;
+}
+
+.modal h2 {
+    color: var(--cold);
+}
+
+.modal-loc-container.hidden {
+    display: none;
+}
+
+.modal .item {
+    margin-top: 16px;
+}
+
+.modal .item p, 
+.modal .item label, 
+.modal .item span{
+    color: var(--text2);
+    text-align: right;
+    margin-top: 4px;
+}
+
+.modal .item label {
+    display: flex;
+    float: right;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.modal .item span {
+    display: flex;
+    float: right;
+    margin-right: 16px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.modal .item i {
+    padding: 8px;
+    font-size: 12px;
+}
+
+.modal .item .deleteItem {
+    background: #FF5050;
+    border: none;
+    border-radius: 4px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.modal .item .date-p {
+    width: 100%;
+    position: relative;
+    left: 32px;
+}
+
+.location:hover .deleteItem {
+    display: block;
+}
+
+.location .deleteItem {
+    display: none;
+    position: relative;
+    background: #FF5050;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;  
+    cursor: pointer;
+}
+

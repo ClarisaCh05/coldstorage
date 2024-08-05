@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/be6ef7a374.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/sidebar.css">
+        <link rel="stylesheet" href="/css/table3.css">
+        <link rel="stylesheet" href="/css/operator/vehicle_manage.css">
+        <title>Vehicle Management</title>
+    </head>
+    <body>
+        <div class="sidebar active">
+            <div class="toggle-btn">
+                <i class="fas fa-bars"></i>
+                <h1>Vehicle Management</h1>
+            </div>
+            <div class="headLine"></div>
+            <div class="links">
+                <div class="tittle">
+                    <p>Menu</p>
+                </div>
+                <li>
+                    <a href="stakeholders.html">
+                        <i class="fas fa-user"></i>
+                        Stakeholders
+                    </a>
+                </li>
+                <li>
+                    <a href="communityHome.html">
+                        <i class="fas fa-users"></i>
+                        Community
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fas fa-home"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="userManagement.html">
+                        <i class="far fa-id-badge"></i>
+                        Users
+                    </a>
+                </li>
+                <li>
+                    <a href="vehichleManagement.html">
+                        <i class="fas fa-truck"></i>
+                        Vehicles
+                    </a>
+                </li>
+                <li>
+                    <a href="addStorage.html">
+                        <i class="fas fa-warehouse"></i>
+                        Storage
+                    </a>
+                </li>
+                <li>
+                    <a href="report.html">
+                        <i class="fas fa-clipboard"></i>
+                        Report
+                    </a>
+                </li>
+                <li class="profile">
+                    <a href="home.html">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Logout
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="main">
+            <div class="btn-field">
+                <a href="addVehicle.html">
+                    <button type="button">+ Add Data</button>  
+                </a>
+            </div>
+            <div class="table-section">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Type</th>
+                            <th>Brand</th>
+                            <th>Max Weight</th>
+                            <th>Plate Number</th>
+                            <th>Colour</th>
+                            <th>Year</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-id=${x.Id}>
+                            <td>1</td>
+                            <td>Pick Up</td>
+                            <td>Suzuki</td>
+                            <td>1600</td>
+                            <td>L 4578 PK</td>
+                            <td>Hitam</td>
+                            <td>2020</td>
+                            <td>-</td>
+                            <td class="btn-fields">
+                                <a href="editVehicle.html?Id=${x.Id}">
+                                    <button type="button" id="editUser"><i czlass="fas fa-pen"></i>Edit</button>
+                                </a>
+                                <button type="button" class="delete"><i class="fas fa-times"></i>Delete</button>
+                            </td>
+                        </tr>   
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination">
+                <div class="previous">
+                    <i class="fas fa-arrow-left"></i>
+                    <div>Previous</div>
+                </div>
+                <div class="page">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>.....</div>
+                    <div>3</div>
+                    <div>4</div>
+                    </div>
+                <div class="next">
+                    <div>Next</div>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+        <script src="/js/style/sidebar.js"></script>
+        <script type="module" src="/js/fetch/vehicleManagement.js"></script>
+    </body>
+</html>

@@ -1,0 +1,132 @@
+.detail {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.container1 h2 {
+    color: var(--cold);
+    margin-bottom: 8px;
+    margin-top: 16px;
+}
+
+.container1 p {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.container1 .note {
+    color: var(--text2);
+    font-size: 16px;
+}
+
+.container1 h3 {
+    margin-top: 28px;
+    color: var(--text3);
+    font-size: 20px;
+    /* border: 1px solid black; */
+}
+
+.container .ta{
+    margin-top: 24px;
+    text-align: right;
+    padding-right: 24px;
+}
+
+.container .items {
+    margin-top: 2.3rem;
+    text-align: right;
+    padding-right: 24px;
+}
+
+.container .items p {
+    margin-bottom: 28.5px;
+    /* border: 1px solid black; */
+}
+
+.container .price {
+    margin-top: 28px;
+}
+
+.container label {
+    font-size: 20px;
+}
+
+.container p {
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+
+.container i {
+    margin-top: 8px;
+    margin-right: 8px;
+    font-size: 24px;
+    color: var(--cold);
+    cursor: pointer;
+}
+
+.main .btn-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main .btn-field button{
+    position: relative;
+    margin-top: 24px;
+    width: 35%;
+    height: 50px;
+    border-radius: 33px;
+    border: none;
+    background: var(--cold);
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    box-shadow: 0px 3px 4px 1px #b4b1b1;
+    cursor: pointer;
+}
+
+.serviceType {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    background-color: var(--cold);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 1rem;
+    top: 1rem; /* Adjust the top position as needed */
+    z-index: 1000;
+}
+
+.report {
+    position: fixed;
+    display: flex;
+    top: 3.2rem;
+    right: 7rem;
+}
+
+.report i {
+    color: var(--cold);
+    margin-right: 8px;
+}
+
+.report a {
+    color: var(--cold);
+    font-weight: 600;
+}
+
+textarea {
+    margin-top: 24px;
+    width: 98%;
+    height: 180px;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 10px;
+}
+    
+
+

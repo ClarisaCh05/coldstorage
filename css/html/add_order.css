@@ -1,0 +1,516 @@
+/* Default styles for the main container */
+.containers {
+    display: grid;
+    grid-template-columns: 46vw auto; /* Adjust the width of the first column as needed */
+    width: 100%;
+    overflow-x: auto;
+}
+
+.sidebar.active .headLine {
+    position: relative;
+    height: 1px;
+    background: black;
+    top: 60px;
+    left: 17.5rem;
+    width: calc(78vw - 20px);
+    transition: all 300ms ease-in-out;
+    z-index: 2;
+}
+
+.sidebar .headLine {
+    position: relative;
+    height: 1px;
+    background: black;
+    top: 60px;
+    left: 17.5rem;
+    width: calc(98vw - 60px);
+    transition: all 300ms ease-in-out;
+    z-index: 2;
+}
+
+/* Default styles for both containers (left and right columns) */
+.containers .container {
+    height: 100%; /* Adjust the height as needed */
+    top: 0;
+    left: 0;
+    overflow-y: auto; 
+    /* Enable vertical scrolling for both containers */
+}
+
+.containers .container:nth-child(1) {
+    width: 100%;
+}
+
+/* Default styles for the second container (right column) */
+.containers .container:nth-child(2) {
+    width: calc(100% - 20px); /* Calculate the width of the right column */
+    padding-left: 20px; 
+    /* Add padding to create space between columns */
+}
+
+
+/* Media query for smaller screens (e.g., tablets) */
+@media (max-width: 768px) {
+    /* Adjust the layout for smaller screens */
+    .containers {
+        grid-template-columns: 100%; /* Single column layout */
+    }
+
+    /* Reset the styles for both containers to stack vertically */
+    .containers .container {
+        width: 100%; /* Full width for both columns */
+        position: static; /* Remove sticky positioning */
+        height: auto; /* Allow content to determine height */
+        padding: 10px; /* Add spacing between stacked containers */
+    }
+}
+
+.containers .container h2 {
+    margin: 8px 0px;
+}
+
+.containers .container select {
+    margin-top: 8px;
+}
+
+.containers .container .inpItems {
+    margin-bottom: 28px;
+}
+
+.containers .container .borderless {
+    padding: 4px 0px;
+    width: 80%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    font-size: 16px;
+}
+
+.containers .container .inpWeight {
+    position: sticky;
+    margin-bottom: 24px;
+}
+
+.containers .container .inpWeight .weight {
+    margin-right: 8px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    text-align: right;
+    font-size: 16px;
+    width: 70px;
+}
+
+.containers .container .inpWeight label {
+    position: relative;
+    font-size: 16px;
+    color: var(--util);
+    margin-right:  250px;
+}
+
+.containers .container .inpAmount span {
+    cursor: pointer;
+}
+
+.containers .container .inpAmount input {
+    border: none;
+    background: none;
+    width: 60px;
+    padding: 9px;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 45px;
+}
+
+.containers .container .inpAmount label {
+    margin-right: 220px;
+    color: var(--util);
+}
+
+.containers .container .inpAmount .plus {
+    position: absolute;
+    background-color: var(--cold);
+    border-radius: 20px;
+    margin: 0px 8px;
+    padding: 10px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    color: white;
+}
+
+.containers .container .inpAmount .minus {
+    position: absolute;
+    background-color: var(--cold);
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+}
+
+.containers .container .warning {
+    margin-top: 16px;
+    font-size: 15px;
+    color: var(--warning);
+}
+
+.containers .container .date input {
+    margin-top: 8px;
+    width: 75%;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+}
+
+.containers .container select {
+    width: 86%;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+.containers .container input[type="checkbox"] {
+    margin: 8px 8px 24px;
+    transform: scale(1.5);
+}
+
+.containers .container .storage a {
+    color: var(--cold);
+    font-size: 15px;
+}
+
+.containers .container .choices {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+    gap: 10px; 
+    min-width: 25%;
+    margin-top: 16px;
+}
+
+.containers .container .choices .choice {
+    width: 150px;
+}
+
+.containers .container .choices input[type="radio"]{
+    transform: scale(1.5);
+}
+
+.containers .container .choices input, label {
+    cursor: pointer;
+}
+
+.containers .container .note{
+    width: 100%;
+}
+
+.containers .container .note textarea {
+    min-width: calc(100% - 50px); /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.containers .container .detailBtn button {
+    width: 189px;
+    padding: 8px 12px;
+    background: none;
+    border: 1px solid var(--cold);
+    border-radius: 10px;
+    color: var(--cold);
+    cursor: pointer;
+}
+
+.containers .container .detailBtn button:hover {
+    background-color: var(--cold);
+    color: white;
+}
+
+.containers .container .pickDetail .bits {
+    color: var(--text);
+    font-size: 12px;
+}
+
+.containers .container .pickDetail #date {
+    margin-top: 8px;
+    width: 75%;
+    padding: 6px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    margin-bottom: 24px;
+}
+
+.containers .container .pickDetail #address {
+    margin-bottom: 32px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 75%;
+    font-size: 18px;
+    padding: 4px;
+}
+
+.main #btn-field {
+    text-align: center;
+}
+
+.main #btn-field button {
+    position: relative;
+    margin-top: 16px;
+    width: 40%;
+    height: 68px;
+    border-radius: 33px;
+    border: none;
+    background: var(--cold);
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    box-shadow: 0px 3px 4px 1px #b4b1b1;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.main .distribute {
+    margin-top: 32px;
+}
+
+.main .distribute .header {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.main .distribute .header .review {
+    /* position: relative;
+    bottom: 41px;
+    left: 11rem; */
+    float: right;
+    background: none;
+    border-radius: 16px;
+    border: 1px solid var(--cold);
+    padding: 8px 16px;
+    color: var(--cold);
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.main .distribute .review:hover {
+    background-color: var(--cold);
+    color: white;
+}
+
+
+.main .distribute label {
+    position: relative;
+    float: left;
+}
+
+.main .distribute input {
+    margin-bottom: 16px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    padding-left: 4px;
+    padding-bottom: 4px;
+    width: 90%
+}
+
+.main .distribute #map {
+    background: none;
+    border-radius: 16px;
+    padding: 8px 32px;
+    margin-bottom: 16px;
+}
+
+.main .distribute span {
+    font-size: 12px;
+    color: var(--text2);
+    margin-left: 24px;
+}
+
+.main .distribute input[type="date"] {
+    border: 1px solid black;
+    margin-top: 16px;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.main .distribute .timeQty {
+    display: grid;
+    grid-template-columns: 10rem 12rem;
+}
+
+.main .distribute .timeQty input[type="time"] {
+    width: 70%;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 4px 8px;
+    margin-top: 16px;
+}
+
+.main .distribute .qtys input {
+    width: 50%;
+    margin: 24px 4px 0px 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.main .distribute #qtySpan {
+    margin-left: 8px;
+    color: var(--warning);
+}
+
+.main .distribute .btn-field button {
+    position: relative;
+    float: right;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    margin-right: 40px;
+    width: 30%;
+    height: 48px;
+    border-radius: 33px;
+    border: none;
+    background: var(--cold);
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    box-shadow: 0px 3px 4px 1px #b4b1b1;
+    cursor: pointer;
+}
+
+.main .container .btn-field-add {
+    text-align: center; /* Center the button horizontally */
+    margin-top: 20px; /* Add some top margin for spacing */
+}
+
+.main .container .btn-field-add #submitForm {
+    position: relative;
+    border: none;
+    color: white;
+    background: var(--cold);
+    width: 50%;
+    height: 60px;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 33px;
+    box-shadow: 0px 3px 4px 1px #b4b1b1;
+    cursor: pointer;
+}   
+
+.main .container .btn-field2 {
+    text-align: center; /* Center the button horizontally */
+}
+
+.main .container .btn-field2 button{
+    position: relative;
+    margin-top: 16px;
+    width: 65%;
+    height: 68px;
+    border-radius: 33px;
+    border: 1px solid var(--cold);
+    background: white;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--cold);
+    box-shadow: 0px 3px 4px 1px #b4b1b1;
+    cursor: pointer;
+}
+
+.main .contract-field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.main .contract-field .contract-preview {
+    background: var(--util);
+    width: 98%;
+    height: 350px;
+    border-radius: 8px;
+    margin: 16px 0; /* Center horizontally */
+}
+
+.main .contract-field label {
+    text-align: right;
+    margin-right: 32px;
+    font-size: 18px;
+    color: var(--cold);
+}
+
+.main .contract-field i {
+    margin-right: 8px;
+    font-size: 18px;
+    color: var(--cold);
+}
+
+.main .contract-signed {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .contract-signed #signedContract {
+    display: none;
+}
+
+.main .contract-signed .uploadContract {
+    border: 1px dashed black;
+    width: 98%;
+    height: 350px;
+    text-align: center;
+    line-height: 350px;
+    border-radius: 10px;
+    margin-top: 16px;
+}
+
+.main .inpClient .form-control {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+
+.main .inpClient {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.main .inpClient #Mobile_Phone {
+    border: 0.5px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 16px;
+    padding: 4px 8px;
+}
+
+.driver {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 16PX;
+}
+
+.dropdown input {
+    height: 37px;
+    width: 86%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin-top: 8px;
+}
+
+.dropdown .options.hidden {
+    display: none;
+}
+
+.dropdown .options .option {
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    border: 1px solid black;
+    width: 86%;
+    padding: 12px;
+    text-align: center;
+}
+

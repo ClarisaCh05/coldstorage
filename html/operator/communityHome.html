@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/be6ef7a374.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/sidebar.css">
+        <link rel="stylesheet" href="/css/operator/communityHome.css">
+        <title>Community Home</title>
+    </head>
+    <body>
+        <div class="sidebar active">
+            <div class="toggle-btn">
+                <i class="fas fa-bars"></i>
+                <h1>Community</h1>
+            </div>
+            <div class="headLine"></div>
+            <div class="links">
+                <div class="tittle">
+                    <p>Menu</p>
+                </div>
+                <li>
+                    <a href="stakeholders.html">
+                        <i class="fas fa-user"></i>
+                        Stakeholders
+                    </a>
+                </li>
+                <li>
+                    <a href="communityHome.html">
+                        <i class="fas fa-users"></i>
+                        Community
+                    </a>
+                </li>
+                <li>
+                    <a href="userManagement.html">
+                        <i class="far fa-id-badge"></i>
+                        Users
+                    </a>
+                </li>
+                <li>
+                    <a href="vehichleManagement.html">
+                        <i class="fas fa-truck"></i>
+                        Vehicles
+                    </a>
+                </li>
+                <li>
+                    <a href="addStorage.html">
+                        <i class="fas fa-warehouse"></i>
+                        Storage
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fas fa-home"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="report.html">
+                        <i class="fas fa-clipboard"></i>
+                        Report
+                    </a>
+                </li>
+                <li class="profile">
+                    <a href="home.html">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Logout
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="main">
+            <div class="containers">
+                <div class="container">
+                    <div class="discussions-container">
+                        <div class="status">
+                            <label><i class="fas fa-circle" id="intro"></i>Introduction</label>
+                        </div>
+                        <div class="discussion">
+                            <div class="profile-pic">
+                                <img src="/img/winter-home-683x1024.jpg" class="rounded-img">
+                            </div>
+                            <div class="topic">
+                                <h1>Tes</h1>
+                                <label><i class="fas fa-share"></i>Latest reply from Mr.Felix</label>
+                                <p>Info info!</p>
+                            </div>
+                            <div class="comments">
+                                <div class="profile-stack">
+                                    <img class="profile-image1" src="/img/coffee in glass.png" alt="Profile 1">
+                                    <img class="profile-image2" src="/img/flower.jpg" alt="Profile 2">
+                                    <img class="profile-image3" src="/img/basketball-in-peru.jpg" alt="Profile 3">
+                                </div>
+                                <div class="comment">
+                                    <label><i class="far fa-comment-dots"></i>25 comments</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container2">
+                    <div class="btn-field">
+                        <button class="newDiscussion" type="button">Start New Discussion</button>
+                    </div>
+                    <div class="options">
+                        <div>
+                            <label id="check"><i class="far fa-comment-alt"></i>All Discussions</label>
+                        </div>
+                        <div>
+                            <i class="fas fa-check" id="check"></i>
+                        </div>
+                        <div>
+                            <label><i class="far fa-star"></i>Following</label>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="status-list">
+                        <div>
+                            <p><i class="fas fa-circle" id="important"></i>Important</p>
+                            <p><i class="fas fa-circle" id="intro"></i>Introduction</p>
+                            <p><i class="fas fa-circle" id="faq"></i>FAQ'S</p>
+                            <p><i class="fas fa-circle" id="annoucement"></i>Annoucement</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/js/style/sidebar.js"></script>
+        <script>
+            const discussion = document.querySelector(".discussion");
+            discussion.addEventListener("click" , () => {
+                window.location.href = "community.html"
+            })
+
+            const discussionPost = document.querySelector(".newDiscussion");
+            discussionPost.addEventListener("click", () => {
+                window.location.href = "communityPost.html"
+            })
+        </script>
+    </body>
+</html>

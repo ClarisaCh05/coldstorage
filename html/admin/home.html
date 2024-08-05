@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/be6ef7a374.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/sidebar.css">
+        <link rel="stylesheet" href="/css/html/home.css">
+        <link rel="stylesheet" href="/css/table.css">
+        <title>Home</title>
+    </head>
+    <body>
+        <div class="sidebar active">
+            <div class="toggle-btn">
+                <i class="fas fa-bars"></i>
+                <h1>Orders</h1>
+            </div>
+            <div class="links">
+                <div class="tittle">
+                    <p>Menu</p>
+                </div>
+                <li class="profilePage">
+                    <a href="profile.html">
+                        <i class="fas fa-user"></i>
+                        Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="history.html">
+                        <i class="fas fa-history"></i>
+                        History
+                    </a>
+                </li>
+                <li>
+                    <a href="addOrder.html">
+                        <i class="far fa-plus-square"></i>
+                        Add new order
+                    </a>
+                </li>
+                <li>
+                    <a href="home.html">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fas fa-clipboard"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="profile">
+                    <a href="login.html">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Logout
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="main">
+            <div class="filter">
+                <div class="container">
+                    <div class="search-orders">
+                        <label>Search for Orders</label>
+                        <input type="text" id="search" placeholder="Search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="paid-unpaid">
+                        <label class="status">Status</label>
+                        <select class="form-control">
+                            <option>Paid</option>
+                            <option>Unpaid</option>
+                        </select>
+                    </div>
+                    <div class="service">
+                        <label class="status">Service</label>
+                        <select class="form-control">
+                            <option default>All</option>
+                            <option>Door to Door</option>
+                            <option>Door to Port</option>
+                            <option>Port to Port</option>
+                            <option>Port to Door</option>
+                        </select>
+                    </div>
+                    <div class="payment">
+                        <label class="status">Payment</label>
+                        <select class="form-control">
+                            <option default>All</option>
+                            <option>Debit Card</option>
+                            <option>Cash</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="status-label">
+                <p id="contract"><i class="fas fa-circle"></i>Have Contract</p>
+                <p><i class="fas fa-circle" id="no_contract"></i>No Contract</p>
+            </div>
+            <div class="table-container">
+                <div class="table-section">
+                    <table id="MyTable">
+                        <thead>
+                            <tr>
+                                <th>Invoice</th>
+                                <th>Date</th>
+                                <th>Customer</th>
+                                <th>Service</th>
+                                <th>Payment</th>
+                                <th>Paid</th>
+                                <th>Deadline Payment</th>
+                                <th>Rent Driver</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="pagination">
+                <div class="previous">
+                    <i class="fas fa-arrow-left"></i>
+                    <div>Previous</div>
+                </div>
+                <div class="page">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>.....</div>
+                    <div>3</div>
+                    <div>4</div>
+                    </div>
+                <div class="next">
+                    <div>Next</div>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+        <script src="/js/style/sidebar.js"></script>
+        <script type="module" src="/js/home.js"></script>
+    </body>
+</html>

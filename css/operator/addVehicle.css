@@ -1,0 +1,129 @@
+.main {
+    height: 100vh;
+}
+
+.sidebar.active .headLine {
+    position: relative;
+    height: 1px;
+    background: black;
+    top: 60px;
+    left: 17.5rem;
+    width: calc(78vw - 20px);
+    transition: all 300ms ease-in-out;
+    z-index: 2;
+}
+
+.sidebar .headLine {
+    position: relative;
+    height: 1px;
+    background: black;
+    top: 60px;
+    left: 17.5rem;
+    width: calc(98vw - 60px);
+    transition: all 300ms ease-in-out;
+    z-index: 2;
+}
+
+.addVehicle {
+    display: grid;
+    grid-template-columns: 12vw 28vw 15vw 25Vw;
+    margin-top: 24px;
+}
+
+.addVehicle div p {
+    font-size: 24px;
+    margin-bottom: 3.5rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.addVehicle div input {
+    margin-bottom: 28px;
+    height: 54px;
+    border-radius: 5px;
+    width: 80%;
+    padding: 8px;
+    font-size: 20px;
+}
+
+.addVehicle #weight {
+    width:35%;
+}
+
+.addVehicle span {
+    margin-left: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text2);
+}
+
+.addVehicle label {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.addVehicle #colorInp {
+    width: 70%;
+    padding: 8px;
+    font-size: 20px;
+}
+
+.addVehicle #color {
+    margin-right: 32px;
+}
+
+.addVehicle #year {
+    margin-right: 62px;
+}
+
+.addVehicle #yearInp {
+    width: 70%;
+    padding: 8px;
+    font-size: 20px;
+}
+
+.main .addVehicle #file {
+    display: none;
+}
+
+.main .addVehicle .photo {
+    display: block;
+    border: 1px dashed black;
+    border-radius: 8px;
+    width: 80%;
+    height: 170px;
+    text-align: center;
+    line-height: 150px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.main .addVehicle .btn-field {
+    width: 100%;
+    text-align: left;
+}
+
+.main .addVehicle .btn-field button {
+    position: relative;
+    margin-top: 16px;
+    width: 85%;
+    height: 68px;
+    border-radius: 33px;
+    border: none;
+    background: var(--cold);
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+
+.main .form-control {
+    margin-bottom: 28px;
+    height: 54px;
+    border-radius: 5px;
+    width: 80%;
+    padding: 8px;
+    font-size: 20px;
+    border: 2px solid black;
+}

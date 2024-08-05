@@ -1,0 +1,136 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 135px 1fr;
+}
+
+.shelfs {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.shelf-container {
+    display: grid;
+    grid-template-columns: 135px 135px 135px 135px;
+}
+
+.shelf-container2 {
+    display: grid;
+    grid-template-columns: 135px 135px 135px 135px;
+}
+
+.shelf:hover {
+    /* border: 1px solid red; */
+    cursor: pointer;
+}
+
+.shelf {
+    /* position: fixed; */
+    margin: 16px;
+    display: grid;
+    grid-template-columns: 10px 70px 10px;
+    margin-top: 16px;
+}
+
+.shelf .column {
+    background: black;
+    border-radius: 7px;
+    width: 10px;
+    height: 120px;
+}
+
+.shelf .rows {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.shelf .rows .row {
+    background: var(--shelf);
+    width: 80px;
+    height: 8px;  
+    margin-top: 4px;  
+    cursor: pointer;
+}
+
+.preview.active {
+    display: block;
+    position: fixed;
+    border: 1px solid #D9D9D9;
+    background: white;
+    width: 22.5rem;
+    height: 32rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.preview {
+    display: none;
+}
+
+.preview .header {
+    margin-bottom: 24px;
+}
+
+.preview .shelf {
+    grid-template-columns: 1.2rem 18rem 1.2rem;
+}
+
+.preview .column-p {
+    background: black;
+    border-radius: 7px;
+    height: 22rem;
+    width: 1.2rem;
+}
+
+.preview .rows-p {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.preview .rows-p .row-p {
+    background: var(--shelf);  
+    margin-top: 16px;  
+    cursor: pointer;
+    width: 18rem;
+    height: 1.5rem;
+}
+
+.shelf .row.select {
+    background: var(--cold);
+}
+
+.shelf .rows-p .row-p.selected {
+    background: var(--shelf2);
+}
+
+.shelf .rows .row.select-p {
+    background: var(--shelf2);
+}
+
+.shelf .rows-p .row-p:hover {
+    border: 4px solid var(--cold);
+}
+
+.preview .fa-times {
+    float: right;
+    margin: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.preview label {
+    position: relative;
+    top: 8px;
+    left: 8px;
+    margin-right: 8px;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer p {
+    color: var(--cold);
+    font-weight: 600;
+}

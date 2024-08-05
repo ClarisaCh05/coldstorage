@@ -1,0 +1,82 @@
+.right-bar {
+    height: 100%;
+    width: 55%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: #6ad6f9;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.right-bar .container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 24px;
+    color: white;
+}
+
+.details-1 div,
+.details-2 div {
+    margin-bottom: 64px;
+}
+
+.right-bar .header {
+    margin-left: 24px;
+    color: white;
+    margin-top: 4rem;
+}
+
+.left-bar i {
+    color: var(--cold);
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.left-bar .home{
+    margin: 16px;
+}
+
+.left-bar .home:hover {
+    cursor: pointer;
+}
+
+.btnField {
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Center the content horizontally */
+}
+
+.btnField button {
+    width: 250px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: var(--cold);
+    border: 5px solid white;
+    color: white;
+    border-radius: 225px;
+}
+
+.foto {
+    height: 100%;
+    width: 45%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+img {
+    width: 35rem;
+    height: 38rem;
+}
+

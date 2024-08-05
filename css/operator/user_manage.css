@@ -1,0 +1,70 @@
+.util {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    width: 97%;
+}
+
+.btn-field {
+    /* Remove float and add margin-left to push it to the far right */
+    margin-left: auto;
+    margin-right: 8px;
+}
+
+.util .search i {
+    margin-right: 8px;
+    color: var(--cold);
+}
+
+.util .search input {
+    padding: 8px 4px;
+    border-radius: 8px;
+    width: 210px;
+    border: 1px solid #ddd;
+}
+
+.util .btn-field button  {
+    position: relative;
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    background: var(--cold);
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    box-shadow: 0px 2px 5px 1px #b4b1b1;
+    cursor: pointer;
+    padding: 8px 4px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 20px;
+
+}
+
+.pagination div {
+    position: sticky;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pagination .previous {
+    position: sticky;
+    right: 73rem;
+    gap: 20px;
+}
+
+.pagination .next {
+    position: sticky;
+    left: 71rem;
+}

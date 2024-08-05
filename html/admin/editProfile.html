@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/be6ef7a374.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/sidebar.css">
+        <link rel="stylesheet" href="/css/operator/addUser.css">
+        <title>Edit User</title>
+    </head>
+    <body>
+        <div class="sidebar active">
+            <div class="toggle-btn">
+                <i class="fas fa-bars"></i>
+                <h1>Orders</h1>
+            </div>
+            <div class="links">
+                <div class="tittle">
+                    <p>Menu</p>
+                </div>
+                <li class="profilePage">
+                    <a href="profile.html">
+                        <i class="fas fa-user"></i>
+                        Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="history.html">
+                        <i class="fas fa-history"></i>
+                        History
+                    </a>
+                </li>
+                <li>
+                    <a href="addOrder.html">
+                        <i class="far fa-plus-square"></i>
+                        Add new order
+                    </a>
+                </li>
+                <li>
+                    <a href="home.html">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fas fa-clipboard"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="profile">
+                    <a href="login.html">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Logout
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="main">
+            <form id="form-addUser">
+                <div class="addUser">
+                    <div>
+                        <p>Name</p>
+                        <input type="text" name="Nama">
+                        <p>Date of Birth</p>
+                        <input type="date" name="Tanggal_Lahir">
+                        <p class="role">Role</p>
+                        <select class="form-control" name="Role">
+                            <option value="driver">Driver</option>
+                            <option value="staff">Ground Staff</option>
+                        </select>
+                        <p>Phone Number</p>
+                        <input type="text" name="Phone_Number">
+                    </div>
+                    <div>
+                        <p>Email</p>
+                        <input type="email" name="Email">
+                        <p>Work Place</p>
+                        <input type="text" name="Workplace">
+                    </div>
+                </div>
+                <div class="btn-field">
+                    <button type="submit" id="submitForm">Next</button>
+                </div>
+            </form>
+        </div>
+        <script src="/js/style/sidebar.js"></script>
+        <script type="module" src="/js/post/editUser.js"></script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/be6ef7a374.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/sidebar.css">
+        <link rel="stylesheet" href="/css/testing3.css">
+        <link rel="stylesheet" href="/css/shelfMap.css">
+        <title>Testing</title>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="door"></div>
+        </div>
+        <div class="status">
+            <label style="color: var(--shelf2);"><i class="fas fa-circle"></i>Full</label>
+            <label style="color: var(--shelf);"><i class="fas fa-circle"></i>Available</label>
+            <label style="color: #FFC34F;"><i class="fas fa-circle"></i>Current Location</label>
+            <label><i class="fas fa-circle"></i>Contract</label>
+         </div>
+        <br>
+        <div class="container">
+            <div class="shelf-container"></div>
+        </div>
+        <script type="module" src="/js/mapShelf.js"></script>
+        
+    </body>
+</html>

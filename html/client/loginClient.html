@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/be6ef7a374.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/html/login.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <title>Client Login Page</title>
+    </head>
+    <body>
+        <div class="left-bar">
+            <img src="/img/c-logo.png">
+            <div class="content">
+                <p><span>Cold</span>Storage</p>
+            </div>
+        </div>
+        <div class="right-bar">
+            <div class="head">
+                <p>Don't have an account yet? <a href="#">Contact Us!</a></p>
+            </div>
+            <div class="login">
+                <h2>Welcome Back!</h2>
+                <p>Fill your email and password</p>
+                <form id="form-login">
+                    <label>Email</label>
+                    <div class="input-field">
+                        <input type="text" name="Email" placeholder="Storage@gmail.com">
+                    </div>
+                    <label>Password</label>
+                    <div class="input-field">
+                        <input type="password" name="Password" id="passwordInp" placeholder="8+ characters">
+                        <i class="far fa-eye-slash" id="toggleButton"></i>
+                    </div>
+                    <div class="btn-field">
+                        <a href="#">
+                            <button type="submit">Login</button>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script type="module" src="/js/loginClient.js"></script>
+    </body>
+</html>

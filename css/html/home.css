@@ -1,0 +1,152 @@
+/* Style for the main filter container */
+.main .filter {
+    width: 67rem;
+    height: 7rem;
+    border-radius: 0.75rem;
+    background: var(--cold);
+    position: relative;
+}
+
+/* Style for the container within the filter */
+.main .filter .container {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Common styles for labels */
+.main .filter .container label {
+    font-weight: 600;
+    color: var(--text);
+}
+
+/* Style for the search orders section */
+.main .filter .container .search-orders {
+    width: 360px;
+    position: absolute;
+    top: 20px;
+    left: 16px;
+    padding: 0; /* Remove margin and padding */
+}
+
+/* Style for the input inside search orders */
+.main .filter .container input {
+    border-radius: 5px;
+    padding: 12px 36px;
+    border: none;
+    width: 80%; /* Adjust the width */
+    margin-top: 12px;
+}
+
+/* Style for the icon inside search orders */
+.main .filter .container i {
+    position: absolute; /* Use absolute positioning */
+    left: 12px; /* Adjust as needed */
+    top: 52px; /* Vertically center the icon */
+    transform: translateY(-50%);
+}
+
+/* Style for the paid/unpaid section */
+.main .filter .container .paid-unpaid {
+    width: 200px;
+    position: absolute; /* Use absolute positioning */
+    bottom: 20px; /* Adjust as needed */
+    left: 26.3rem; /* Horizontally center the section */
+    transform: translateX(-50%);
+}
+
+/* Style for the select inside paid/unpaid */
+.main .filter .container .paid-unpaid select {
+    width: 180px; /* Adjust the width */
+    border-radius: 5px;
+    padding: 10.8px;
+    border: none;
+    margin-top: 16px;
+}
+
+/* Style for the service section */
+.main .filter .container .service {
+    width: 280px;
+    position: absolute; /* Use absolute positioning */
+    bottom: 20px; /* Adjust as needed */
+    left: 41rem; /* Horizontally center the section */
+    transform: translateX(-50%);
+}
+
+/* Style for the select inside service */
+.main .filter .container .service select {
+    width: 80%; /* Adjust the width */
+    border-radius: 5px;
+    padding: 10.8px;
+    border: none;
+    margin-top: 16px;
+}
+
+/* Style for the payment section */
+.main .filter .container .payment {
+    width: 280px;
+    position: absolute; /* Use absolute positioning */
+    bottom: 20px; /* Adjust as needed */
+    left: 56rem; /* Horizontally center the section */
+    transform: translateX(-50%);
+}
+
+/* Style for the select inside payment */
+.main .filter .container .payment select {
+    width: 100%; /* Adjust the width */
+    border-radius: 5px;
+    padding: 10.8px;
+    border: none;
+    margin-top: 16px;
+}
+
+.main .status-label {
+    margin-top: 16px;
+}
+
+.main .status-label p {
+    margin-top: 8px;
+}
+
+.main .status-label i {
+    margin-right: 8px;
+}
+
+.main .status-label #contract {
+    color: var(--shelf2);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 20px;
+
+}
+
+.pagination div {
+    position: sticky;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pagination .previous {
+    position: sticky;
+    right: 73rem;
+    gap: 20px;
+}
+
+.pagination .next {
+    position: sticky;
+    left: 71rem;
+}
+
+.main table tr {
+    cursor: pointer;
+}

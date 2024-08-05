@@ -1,0 +1,48 @@
+/* Container for the table to make it scrollable */
+.table-container {
+    /* max-height: calc(100vh - 7rem); */
+    margin-top: 1.5rem;
+}
+
+/* Style for the table section */
+.table-section {
+    /* Adjust the top value as needed */
+    top: 2rem;
+}
+
+/* Style for the table */
+.table-section table {
+    width: 97%;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    height: 100%;
+}
+
+/* Style for table header cells */
+.table-section thead th {
+    position: relative;
+    top: 0;
+    font-size: 16px;
+    /* z-index: 1;  */
+    text-align: center;
+}
+
+/* Style for table body cells */
+.table-section th, .table-section td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px; /* Adjust the padding as needed */
+    text-align: center;
+}
+
+.table-section tbody tr:last-child td {
+    border: none;
+}
+
+.table-section td {
+    color: var(--cold);
+    font-weight: 600;
+}
+
+.table-section .name {
+    color: black;
+}

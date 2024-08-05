@@ -1,0 +1,177 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 135px 1fr;
+}
+
+.shelfs {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.shelf-container {
+    display: grid;
+    grid-template-columns: 135px 135px 135px 135px 135px;
+}
+
+.shelf:hover {
+    /* border: 1px solid red; */
+    cursor: pointer;
+}
+
+.shelf {
+    /* position: fixed; */
+    margin: 16px;
+    display: grid;
+    grid-template-columns: 10px 70px 10px;
+    margin-top: 16px;
+}
+
+.shelf .column {
+    background: black;
+    border-radius: 7px;
+    width: 10px;
+    height: 120px;
+}
+
+.shelf .rows {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.shelf .rows .row {
+    background: var(--shelf);
+    width: 80px;
+    height: 8px;  
+    margin-top: 4px;  
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    border: 1px solid #D9D9D9;
+    background: white;
+    width: 55rem;
+    height: 32rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.preview .header {
+    margin-bottom: 24px;
+}
+
+.modal .modal-con .shelf {
+    grid-template-columns: 1.2rem 18rem 1.2rem;
+}
+
+.modal .modal-con .column {
+    background: black;
+    border-radius: 7px;
+    height: 22rem;
+    width: 1.2rem;
+}
+
+.modal .modal-con .rows {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.modal .modal-con .rows .row {
+    background: var(--shelf);  
+    margin-top: 16px;  
+    cursor: pointer;
+    width: 18rem;
+    height: 1.5rem;
+}
+
+.modal .header p {
+    margin-left: 24px;
+    margin-top: 16px;
+}
+
+.modal .closeBtn {
+    position: relative;
+    bottom: 16px;
+    text-align: right;
+    margin-right: 24px;
+}
+
+.modal .close {
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.shelf .row.select {
+    background: var(--cold);
+}
+
+.shelf .rows-p .row-p.selected {
+    background: var(--shelf2);
+}
+
+.shelf .rows .row.select-p {
+    background: var(--shelf2);
+}
+
+.modal .rows .row:hover {
+    border: 4px solid var(--cold);
+}
+
+.preview .fa-times {
+    float: right;
+    margin: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.preview label {
+    position: relative;
+    top: 8px;
+    left: 8px;
+    margin-right: 8px;
+}
+
+.modal .footer {
+    text-align: center;
+}
+
+.modal .footer label {
+    color: var(--cold);
+    font-weight: 600;
+}
+
+.modal .footer .saveBtn button {
+    padding: 4px 24px;
+    margin-top: 8px;
+    background: var(--cold);
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 0px 3px 4px 1px #b4b1b1;
+}
+
+.modal-con {
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+.info-1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.info-1 p {
+    margin-top: 8px;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.info-1 h4 {
+    width: 100%;
+    color: var(--cold);
+}

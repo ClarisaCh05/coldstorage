@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/be6ef7a374.js" crossorigin="anonymous"></script>    
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/sidebar.css">
+        <link rel="stylesheet" href="/css/operator/dashboard.css">
+        <link rel="stylesheet" href="/css/operator/report.css">
+        <title>Report</title>
+    </head>
+    <body>
+        <div class="sidebar active">
+            <div class="toggle-btn">
+                <i class="fas fa-bars"></i>
+                <h1>Report</h1>
+            </div>
+            <div class="headLine"></div>
+            <div class="links">
+                <div class="tittle">
+                    <p>Menu</p>
+                </div>
+                <li>
+                    <a href="stakeholders.html">
+                        <i class="fas fa-user"></i>
+                        Stakeholders
+                    </a>
+                </li>
+                <li>
+                    <a href="communityHome.html">
+                        <i class="fas fa-users"></i>
+                        Community
+                    </a>
+                </li>
+                <li>
+                    <a href="userManagement.html">
+                        <i class="far fa-id-badge"></i>
+                        Users
+                    </a>
+                </li>
+                <li>
+                    <a href="vehichleManagement.html">
+                        <i class="fas fa-truck"></i>
+                        Vehicles
+                    </a>
+                </li>
+                <li>
+                    <a href="addStorage.html">
+                        <i class="fas fa-warehouse"></i>
+                        Storage
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fas fa-home"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="report.html">
+                        <i class="fas fa-clipboard"></i>
+                        Report
+                    </a>
+                </li>
+                <li class="profile">
+                    <a href="home.html">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Logout
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="main">
+            <div class="header">
+                <div class="total-rev">
+                    <div class="info">
+                        <label>Total Revenue</label><span>4% <i class="fas fa-long-arrow-alt-right"></i></span>
+                        <h2>Rp 100.000.000</h2>
+                    </div>
+                    <div class="icon">
+                        <i class="far fa-file"></i>
+                    </div>
+                </div>
+                <div class="sales">
+                    <div class="info">
+                        <label>Sales</label><span>4% <i class="fas fa-long-arrow-alt-right"></i></span>
+                        <h2>20</h2>
+                        <p>Since yesterday</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                </div>
+                <div class="stocks">
+                    <div class="info">
+                        <label>Stocks</label><span>4% <i class="fas fa-long-arrow-alt-right"></i></span>
+                        <h2>Rp 1.000.000</h2>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-money-bill"></i>
+                    </div>
+                </div>
+                <div class="clients">
+                    <div class="info">
+                        <label>Clients</label><span>+100 <i class="fas fa-long-arrow-alt-right"></i></span>
+                        <h2>500</h2>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="table">
+                <br>
+                <h2 style="color: var(--cold);">Monthly Sales Report</h2>
+                <table>
+                    <tr class="week-1">
+                        <td>Week 1</td>
+                        <script>
+                            for (let i = 1; i <= 7; i++) {
+                                var rand = Math.floor(Math.random() * 100);
+                                var className;
+                                if (rand <= 20) {
+                                    className = "t-20";
+                                } else if (rand <= 40) {
+                                    className = "t-40";
+                                } else if (rand <= 60) {
+                                    className = "t-60";
+                                } else if (rand <= 80) {
+                                    className = "t-80";
+                                } else {
+                                    className = "t-100";
+                                }
+                                document.write(`<td class="week ${className}" data-week="1" data-name="m-${i}"></td>`);
+                            }
+                        </script>
+                    </tr>
+                    <tr class="week-2">
+                        <td>Week 2</td>
+                        <script>
+                            for (let i = 1; i <= 7; i++) {
+                                var rand = Math.floor(Math.random() * 100);
+                                var className;
+                                if (rand <= 20) {
+                                    className = "t-20";
+                                } else if (rand <= 40) {
+                                    className = "t-40";
+                                } else if (rand <= 60) {
+                                    className = "t-60";
+                                } else if (rand <= 80) {
+                                    className = "t-80";
+                                } else {
+                                    className = "t-100";
+                                }
+                                document.write(`<td class="week ${className}" data-week="2" data-name="m-${i}"></td>`);
+                            }
+                        </script>
+                    </tr>
+                    <tr class="week-3">
+                        <td>Week 3</td>
+                        <script>
+                            for (let i = 1; i <= 7; i++) {
+                                var rand = Math.floor(Math.random() * 100);
+                                var className;
+                                if (rand <= 20) {
+                                    className = "t-20";
+                                } else if (rand <= 40) {
+                                    className = "t-40";
+                                } else if (rand <= 60) {
+                                    className = "t-60";
+                                } else if (rand <= 80) {
+                                    className = "t-80";
+                                } else {
+                                    className = "t-100";
+                                }
+                                document.write(`<td class="week ${className}" data-week="3" data-name="m-${i}"></td>`);
+                            }
+                        </script>
+                    </tr>
+                    <tr class="week-4">
+                        <td>Week 4</td>
+                        <script>
+                            for (let i = 1; i <= 7; i++) {
+                                var rand = Math.floor(Math.random() * 100);
+                                var className;
+                                if (rand <= 20) {
+                                    className = "t-20";
+                                } else if (rand <= 40) {
+                                    className = "t-40";
+                                } else if (rand <= 60) {
+                                    className = "t-60";
+                                } else if (rand <= 80) {
+                                    className = "t-80";
+                                } else {
+                                    className = "t-100";
+                                }
+                                document.write(`<td class="week ${className}" data-week="4" data-name="m-${i}"></td>`);
+                            }
+                        </script>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>January</td>
+                        <td>Febuary</td>
+                        <td>Maret</td>
+                        <td>April</td>
+                        <td>May</td>
+                        <td>June</td>
+                        <td>July</td>
+                    </tr>
+                </table>
+                <div class="legends">
+                    <div class="legend">
+                        <label><i class="fas fa-circle" style="color: #E3F8FF;"></i>0 - 20</label>
+                        <label><i class="fas fa-circle" style="color: #C8F1FF;"></i>20 - 40</label>
+                        <label><i class="fas fa-circle" style="color: #8DE3FF;"></i>40 - 60</label>
+                        <label><i class="fas fa-circle" style="color: var(--cold);"></i>60 - 80</label>
+                        <label><i class="fas fa-circle" style="color: #00C1FF;"></i>80 - 100</label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-container hidden">
+                <div class="modal-place"></div>
+            </div>
+            <div class="containers">
+                <div class="container">
+                    <div class="detail2">
+                        <h2 style="color: var(--cold);">Monthly Stocks Report</h2>
+                        <select class="form-control">
+                            <option default>Month</option>
+                            <option>Week</option>
+                            <option>Year</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="chart-1-report">
+                        <canvas class="chart-1-canvas"></canvas>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="detail2">
+                        <h3 style="color: var(--cold);">Total Revenue</h3>
+                        <a href="#">Edit</a>
+                    </div>
+                    <div class="chart-2-report">
+                        <canvas class="chart-2-canvas"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/js/style/sidebar.js"></script>
+        <script type="module" src="/js/chart2.js"></script>
+    </body>
+</html>

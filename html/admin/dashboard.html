@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/be6ef7a374.js" crossorigin="anonymous"></script>    
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/sidebar.css">
+        <link rel="stylesheet" href="/css/operator/dashboard.css">
+    </head>
+    <body>
+        <div class="sidebar active">
+            <div class="toggle-btn">
+                <i class="fas fa-bars"></i>
+                <h1>Orders</h1>
+            </div>
+            <div class="links">
+                <div class="tittle">
+                    <p>Menu</p>
+                </div>
+                <li>
+                    <a href="profile.html">
+                        <i class="fas fa-user"></i>
+                        Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="history.html">
+                        <i class="fas fa-history"></i>
+                        History
+                    </a>
+                </li>
+                <li>
+                    <a href="addOrder.html">
+                        <i class="far fa-plus-square"></i>
+                        Add new order
+                    </a>
+                </li>
+                <li>
+                    <a href="home.html">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fas fa-clipboard"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="profile">
+                    <a href="login.html">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Logout
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="main">
+            <div class="header">
+                <div class="total-rev">
+                    <div class="info">
+                        <label>Total Revenue</label><span>4% <i class="fas fa-long-arrow-alt-right"></i></span>
+                        <h2>Rp 100.000.000</h2>
+                    </div>
+                    <div class="icon">
+                        <i class="far fa-file"></i>
+                    </div>
+                </div>
+                <div class="sales">
+                    <div class="info">
+                        <label>Sales</label><span>4% <i class="fas fa-long-arrow-alt-right"></i></span>
+                        <h2>20</h2>
+                        <p>Since yesterday</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                </div>
+                <div class="stocks">
+                    <div class="info">
+                        <label>Stocks</label><span>4% <i class="fas fa-long-arrow-alt-right"></i></span>
+                        <h2>Rp 1.000.000</h2>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-money-bill"></i>
+                    </div>
+                </div>
+                <div class="clients">
+                    <div class="info">
+                        <label>Clients</label><span>+100 <i class="fas fa-long-arrow-alt-right"></i></span>
+                        <h2>500</h2>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="container">
+                    <div class="chart1">
+                        <div class="detail1">
+                            <div class="desc1">
+                                <h2 class="time-rev">Monthly Revenue</h2>
+                                <h2 class="rev">Rp 100.000.000</h2>
+                            </div>
+                            <div class="radioBtn">
+                                <input class="radio_input" type="radio" name="timeStamp" id="day" value="day">
+                                <label class="radio_label" for="day">Day</label>
+                                <input class="radio_input" type="radio" name="timeStamp" id="week" value="week">
+                                <label class="radio_label" for="week">Week</label>
+                                <input class="radio_input" type="radio" name="timeStamp" id="month" value="month">
+                                <label class="radio_label" for="month">Month</label>
+                                <input class="radio_input" type="radio" name="timeStamp" id="year" value="year">
+                                <label class="radio_label" for="year">Year</label>
+                            </div>
+                        </div>
+                        <div class="chart1-container">
+                            <!-- <canvas class="chart-1"></canvas> -->
+                            <div class="year-stats">
+                                <!-- <div class="month"></div> the month div goes here -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner-container">
+                        <div class="chart2">
+                            <h3>Category Items</h3>
+                            <div class="chart2-container">
+                                <div class="chart-2">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart3">
+                            <div class="desc2">
+                                <h2 class="time-rev">Total Building Capacity</h2>
+                                <h2 class="rev">99 / 100 Slots</h2>
+                            </div>
+                            <div class="chart3-container">
+                                <div class="chart-3">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart5">
+                        <div class="detail2">
+                            <h2 style="color: var(--cold);">Monthly New Clients</h2>
+                            <select class="form-control">
+                                <option default>Month</option>
+                                <option>Week</option>
+                                <option>Year</option>
+                            </select>
+                        </div>
+                        <div class="chart5-container">
+                            <canvas class="chart-5"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart7">
+                        <div class="detail2">
+                            <h2 style="color: var(--cold);">Monthly Reports From Clients</h2>
+                            <select class="form-control">
+                                <option default>Month</option>
+                                <option>Week</option>
+                                <option>Year</option>
+                            </select>
+                        </div>
+                        <div class="chart7-container">
+                            <canvas class="chart-7"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="activity">
+                        <h3>Activity</h3>
+                        <div class="activities">
+                            <div class="activity-list">
+                                <img src="/img/Felix-Stray-Kids-ivyclub.png" class="rounded-img">
+                                <div class="act">
+                                    <p><i class="fas fa-flag"></i> New Invoice</p>
+                                    <p class="name">Admin Felix <span>created invoice BJ4578OIK</span></p>
+                                    <br>
+                                    <label>Just now</label>
+                                </div>
+                            </div>
+                            <div class="vertical-line"></div>
+                            <div class="act">
+                                <div class="activity-list">
+                                    <img src="/img/Ellipse 173.png" class="rounded-img">
+                                    <div class="act">
+                                        <p class="name">Invoice BJ544178KL <span>payment deadline remainder</span></p>
+                                        <br>
+                                        <label>Just now</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart4">
+                        <div class="detail2">
+                            <h3 style="color: var(--cold);">Services Sold</h3>
+                            <select class="form-control">
+                                <option default>Month</option>
+                                <option>Week</option>
+                                <option>Year</option>
+                            </select>
+                        </div>
+                        <div class="chart4-container">
+                            <canvas class="chart-4"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart6">
+                        <h3>Weight</h3>
+                        <div class="chart6-container">
+                            <div class="chart-6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/js/style/sidebar.js"></script>
+        <script type="module" src="/js/chart.js"></script>
+        <script type="module" src="/js/dashboard.js"></script>
+    </body>
+</html>

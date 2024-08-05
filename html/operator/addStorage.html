@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/be6ef7a374.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/sidebar.css">
+        <link rel="stylesheet" href="/css/operator/addStorage.css">
+        <title>Add Storage</title>
+    </head>
+    <body>
+        <div class="sidebar active">
+            <div class="toggle-btn">
+                <i class="fas fa-bars"></i>
+                <h1>Add Storage</h1>
+            </div>
+            <div class="headLine"></div>
+            <div class="links">
+                <div class="tittle">
+                    <p>Menu</p>
+                </div>
+                <li>
+                    <a href="stakeholders.html">
+                        <i class="fas fa-user"></i>
+                        Stakeholders
+                    </a>
+                </li>
+                <li>
+                    <a href="communityHome.html">
+                        <i class="fas fa-users"></i>
+                        Community
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fas fa-home"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="userManagement.html">
+                        <i class="far fa-id-badge"></i>
+                        Users
+                    </a>
+                </li>
+                <li>
+                    <a href="vehichleManagement.html">
+                        <i class="fas fa-truck"></i>
+                        Vehicles
+                    </a>
+                </li>
+                <li>
+                    <a href="addStorage.html">
+                        <i class="fas fa-warehouse"></i>
+                        Storage
+                    </a>
+                </li>
+                <li>
+                    <a href="report.html">
+                        <i class="fas fa-clipboard"></i>
+                        Report
+                    </a>
+                </li>
+                <li class="profile">
+                    <a href="home.html">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Logout
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="main">
+            <div class="containers">
+                <div class="container">
+                    <h1>Storage</h1>
+                    <br>
+                    <h3>Name</h3>
+                    <input type="text" class="Nama_Gedung" name="Nama_Gedung" placeholder="Gedung A, Gedung B, etc">
+                    <h3>Address</h3>
+                    <input type="text" class="alamat" name="Alamat">
+                    <h3>Aisle</h3>
+                    <input type="number" class="jumlahAisle" min="0">
+                    <h3>Shelf</h3>
+                    <p>Input the total of shelf in an aisle</p>
+                    <input type="number" class="jumlahShelf" min="0">
+                    <h3>Pallet</h3>
+                    <p>Input the total of pallet in a shelf</p>
+                    <input type="number" class="jumlahPallet" min="0">
+                </div>
+                <div class="container">
+                    <h1>Attribute</h1>
+                    <br>
+                    <h3>Temperature</h3>
+                    <input type="number" class="temp" name="Temperature"><label>Celcius</label>
+                    <h3>Category</h3>
+                    <input type="text" class="category" name="Kategori">
+                    <h3>Capacity</h3>
+                    <p>Input the capacity for the pallet</p>
+                    <input type="number" class="kapasitas" min="0">
+                    <div class="btn-field">
+                        <button type="submit" class="addStorage">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/js/style/sidebar.js"></script>
+        <script type="module" src="/js/addStorage.js"></script>
+    </body>
+</html>

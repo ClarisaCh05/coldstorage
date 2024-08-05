@@ -1,0 +1,90 @@
+.sidebar.active .headLine {
+    position: relative;
+    height: 1px;
+    background: black;
+    top: 60px;
+    left: 17.5rem;
+    width: calc(78vw - 20px);
+    transition: all 300ms ease-in-out;
+    z-index: 2;
+}
+
+.sidebar .headLine {
+    position: relative;
+    height: 1px;
+    background: black;
+    top: 60px;
+    left: 17.5rem;
+    width: calc(98vw - 60px);
+    transition: all 300ms ease-in-out;
+    z-index: 2;
+}
+
+.util {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    width: 97%;
+}
+
+.btn-field {
+    /* Remove float and add margin-left to push it to the far right */
+    margin-left: auto;
+    margin-right: 4rem;
+    float: right;
+    margin-bottom: 16px;
+}
+
+.btn-field button  {
+    position: relative;
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    background: var(--cold);
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    box-shadow: 0px 2px 5px 1px #b4b1b1;
+    cursor: pointer;
+    padding: 8px 4px;
+}
+
+.table-section tbody td {
+    color: var(--cold);
+}
+
+.table-section tbody td:first-child {
+    color: black;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 20px;
+
+}
+
+.pagination div {
+    position: sticky;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pagination .previous {
+    position: sticky;
+    right: 73rem;
+    gap: 20px;
+}
+
+.pagination .next {
+    position: sticky;
+    left: 71rem;
+}

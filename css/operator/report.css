@@ -1,0 +1,178 @@
+table {
+    width: 98%;
+    margin-top: 16px;
+}
+
+td {
+    width: 12%;
+    height: 90px;
+    text-align: center;
+    border: 10px solid white;
+    border-radius: 20px;
+}
+
+.t-20:hover, .t-40:hover, .t-60:hover,
+.t-80:hover, .t-100:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.t-20 {
+    background-color: #E3F8FF;
+}
+
+.t-40 {
+    background-color: #C8F1FF;
+}
+
+.t-60 {
+    background-color: #8DE3FF;
+}
+
+.t-80 {
+    background-color: var(--cold);
+}
+
+.t-100 {
+    background-color:#00C1FF;
+}
+
+.legends {
+    display: flex;
+    justify-content: center; /* Center the .legend div horizontally */
+    align-items: center; /* Center the .legend div vertically */
+}
+
+.legend {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 48px;
+}
+
+.legend i {
+    margin-right: 8px;
+}
+
+.legend label {
+    font-weight: 600;
+    margin-right: 60px;
+    font-size: 20px;
+}
+
+.containers {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin-top: 32px;
+}
+
+.container {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+.container:first-child {
+    width: 98%;
+}
+
+.container:last-child {
+    width: 90%;
+    height: 80%;
+}
+
+.chart-1-report {
+    width: 95%;
+    height: 80%;
+    display: flex;
+    flex-direction: column; /* Add this line */
+    align-items: center;
+    margin: 16px;
+}
+
+.container h2, h3 {
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+.chart-2-report {
+    height: 80%;
+    width: 95%;
+    display: flex;
+    flex-direction: column; /* Add this line */
+    align-items: center;
+    margin: 16px;
+}
+
+.container a{
+    margin-top: 18px;
+    margin-right: 16px;
+    text-align: right;
+    text-decoration: none;
+    color: var(--cold);
+}
+
+.week1, .week2, 
+.week3, .week4 {
+    display: none;
+}
+
+.week1.active,
+.week2.active,
+.week3.active,
+.week4.active {
+    display: block;
+    background-color: #00C1FF;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-container {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-place {
+    border: 1px solid var(--border);
+    border-radius: 11px;
+    width: 62rem;
+    position: fixed;
+    top: 50%; /* Vertical centering */
+    left: 50%; /* Horizontal centering */
+    transform: translate(-50%, -50%); /* Centering using transform */
+    background-color: white; /* Add your desired background color */
+    padding: 20px;
+    z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+.hidden {
+    display: none;
+}
+
+.header-m {
+    margin-bottom: 16px;
+}
+
+.header-m h2 {
+    color: var(--cold);
+}
+
+.modal {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.modal .doughnut-chart {
+    height: 30rem;
+    width: 30rem;
+    align-items: center;
+}
+

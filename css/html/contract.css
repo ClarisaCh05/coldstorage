@@ -1,0 +1,40 @@
+canvas {
+    border-radius: 10px;
+    background: var(--canvas);
+    min-width: calc(100% - 16px);
+    height: 100%;
+    padding: 24px;
+}
+
+.container {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    width: 95%;
+    margin-top: 16px;
+}
+
+.container .upload input[type="file"]::file-selector-button {
+    border-radius: 10px;
+    height: 100px;
+    width: 120px;
+    margin: 8px;
+    border: none;
+}
+
+.container .detail input {
+    width: 25rem;
+    padding: 8px 4px;
+    border-radius: 10px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.container .detail p {
+    margin-bottom: 8px;
+}
+
+.container .detail a {
+    color: var(--cold);
+}

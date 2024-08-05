@@ -1,0 +1,398 @@
+.header {
+    border: 1px var(--border) solid;
+    height: 9rem !important;
+    width: 98%;
+    border-radius: 11px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-gap: 24px;
+    margin-top: 24px;
+}
+
+.grid .chart1 {
+    border: 1px var(--border) solid;
+    border-radius: 11px;
+    height: 23rem;
+    width: 100%;
+}
+
+.grid .activity {
+    border: 1px var(--border) solid;
+    border-radius: 11px;
+    height: 8rem;
+    width: 87%;
+    height: 23rem;
+}
+
+.inner-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-top: 24px;
+}
+
+.container .chart2{
+    border: 1px var(--border) solid;
+    border-radius: 11px;
+    flex: 1; /* Distribute available space equally among the child elements */
+    width: 95%; /* Set a maximum width (50% - gap) */
+    height: 23rem;
+}
+
+.container .chart3 {
+    border: 1px var(--border) solid;
+    border-radius: 11px;
+    flex: 1; /* Distribute available space equally among the child elements */
+    width: 100%; /* Set a maximum width (50% - gap) */
+    height: 23rem;
+}
+
+.container .chart4 {
+    border: 1px var(--border) solid;
+    border-radius: 11px;
+    flex: 1; /* Distribute available space equally among the child elements */
+    width: 87%; /* Set a maximum width (50% - gap) */
+    height: 29rem;
+    margin-top: 24px;
+    box-sizing: border-box; /* Include border in the width calculation */
+}
+
+.container .chart5 {
+    border: 1px var(--border2) solid;
+    width: 100%;
+    height: 31rem;
+    margin-top: 24px;
+}
+
+.container .chart6 {
+    border: 1px var(--border) solid;
+    border-radius: 11px;
+    width: 87%; /* Set a maximum width (50% - gap) */
+    height: 23rem;
+    margin-top: 3.5rem;
+}
+
+.container .chart7 {
+    border: 1px var(--border2) solid;
+    width: 100%;
+    height: 31rem;
+    margin-top: 40px;
+    margin-bottom: 8px;
+}
+
+.chart1 {
+    display:grid;
+    align-items: center;
+}
+
+.chart4 h3 {
+    margin: 16px 24px;  
+}
+
+.chart1-container, 
+.chart3-container,
+.chart6-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.month {
+    display: inline-block;
+    margin: 0px 16px;
+}
+
+.slots {
+    display: inline-block;
+    margin-top: 32px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.slots p {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.bar {
+    background-color: var(--shelf);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.bar:hover {
+    background-color: var(--cold);
+    box-shadow: 0px 0px 20px 20px rgba(106, 214, 249, 0.20);
+}
+
+.month p {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.chart2 h3 {
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+.chart-2 {
+    width: 90%;
+    margin-left: 16px;
+}
+
+.chart-2 label {
+    margin-top: 16px;
+    color: var(--text2);
+}
+
+.background {
+    background-color: #00A0D4;
+    border-radius: 100px;
+}
+
+.bar-length {
+    background-color: var(--cold);
+    border-radius: 100px;
+}
+
+.detail2 {
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.detail2 span {
+    text-align: right;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: var(--text2);
+}
+
+.detail1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.desc1 {
+    margin-left: 32px;
+    margin-top: 40px;
+}
+
+.rev {
+    color: var(--cold);
+}
+
+.radioBtn {
+    display: inline-flex;
+    overflow: hidden;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    height: 35%;
+    margin-top: 16px;
+    margin-right: 16px;
+    margin-left: auto; /* Move to the right by using auto */
+}
+        
+.radio_input {
+    display: none;
+}
+
+.radio_label {
+    padding: 8px 14px;
+    font-size: 14px;
+    font-family: sans-serif;
+    cursor: pointer;
+    transform: background 0.1s;
+    font-weight: 600;
+}
+
+.radio_label:not(:last-of-type) {
+    border-right: 1px solid #DDD;
+}
+
+.radio_input:checked + .radio_label {
+    background-color: var(--cold);
+    color: white;
+}
+
+.desc2 {
+    margin-top: 16px;
+    margin-left: 24px;
+}
+
+.desc2 h3{
+    margin-top: 16px;
+}
+
+.form-control {
+    width: 55%;
+    margin-left: auto;
+    margin-right: 24px;
+    margin-top: 16px;
+    border: none;
+    padding: 0;
+    color: var(--cold);
+    text-align: right;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.chart5-container {
+    width: 95%;
+    height: 80%;
+    display: flex;
+    flex-direction: column; /* Add this line */
+    align-items: center;
+    margin-left: 16px;
+}
+
+.chart6 h3,
+.chart5 h3,
+.chart7 h3 {
+    margin: 24px 16px;
+}
+
+.chart7-container {
+    width: 95%;
+    height: 80%;
+    display: flex;
+    flex-direction: column; /* Add this line */
+    align-items: center;
+    margin-left: 16px;
+}
+
+.header {
+    display: flex; /* Use flexbox for the header container */
+    justify-content: space-between; /* Space out the divs */
+    align-items: center; /* Vertically center the divs */
+    height: 100px; /* Adjust the height as needed */
+}
+
+.header .total-rev,
+.header .stocks,
+.header .clients {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    border-right: 1px solid black;
+    width: calc(50% - 0.5px); /* 50% width with border adjustment */
+    height: 68%;
+    box-sizing: border-box; /* Include border in width calculation */
+    align-items: center;
+}
+
+.header .sales {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    border-right: 1px solid black;
+    width: calc(40% - 0.5px); /* 50% width with border adjustment */
+    height: 68%;
+    box-sizing: border-box; /* Include border in width calculation */
+    align-items: center;
+}
+
+.header div:last-child {
+    border: none;
+}
+
+.info {
+    margin-left: 16px;
+}
+
+.header label {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.header span {
+    margin-left: 8px;
+    text-align: center;
+    background: var(--bg);
+    color: var(--up);
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 19px;
+    font-size: 14px;
+}
+
+.header .info i {
+    transform: rotate(-48deg);
+}
+
+.header .info h2 {
+    margin-top: 8px;
+    color: var(--cold);
+}
+
+.header .icon {
+    text-align: center;
+}
+
+.header .icon i {
+    font-size: 56px;
+    color: var(--cold);
+}
+
+.header .info p {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text2);
+    margin-top: 8px;
+}
+
+.activity h3 {
+    margin: 16px 24px;
+}
+
+.rounded-img {
+    border-radius: 50%; /* Set a border radius of 50% for a circular shape */
+    width: 37px; /* Set the width of the image */
+    height: 37px; /* Set the height of the image */
+    margin: 0px 24px;
+    margin-top: 16px;
+}
+
+.activity-list {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.act i,
+.act p {
+    color: var(--up);
+    font-size: 12px;
+}
+
+.act .name {
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.act span {
+    color: var(--text);
+}
+
+.act label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text3);
+}
+
+.activity {
+    position: relative;
+}
+
+.vertical-line {
+    position: relative;
+    border-left: 1px solid var(--text2);
+    height: 100px;
+    margin-left: 40px;
+    bottom: 16px;
+}
+
+
+

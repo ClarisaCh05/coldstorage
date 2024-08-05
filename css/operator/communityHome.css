@@ -1,0 +1,215 @@
+.sidebar.active .headLine {
+    position: relative;
+    height: 1px;
+    background: black;
+    top: 60px;
+    left: 17.5rem;
+    width: calc(78vw - 20px);
+    transition: all 300ms ease-in-out;
+    z-index: 2;
+}
+
+.sidebar .headLine {
+    position: relative;
+    height: 1px;
+    background: black;
+    top: 60px;
+    left: 17.5rem;
+    width: calc(98vw - 60px);
+    transition: all 300ms ease-in-out;
+    z-index: 2;
+}
+
+.rounded-img {
+    border-radius: 50%; /* Set a border radius of 50% for a circular shape */
+    width: 68px; /* Set the width of the image */
+    height: 70px; /* Set the height of the image */
+    margin: 0px 24px;
+    margin-top: 16px;
+}
+
+.containers {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.discussions-container {
+    border: 1px solid var(--box);
+    border-radius: 11px;
+    padding: 16px;
+    margin-bottom: 16px;
+    width: 90%;
+    position: relative;
+    box-shadow: 1px 4px 5px #b4b1b1;
+    cursor: pointer;
+}
+
+.discussions-container .status {
+    width: 160px;
+    height: 30px;
+    border: 1px solid var(--border3);
+    border-radius: 3px;
+    background: white;
+    text-align: center;
+    position: absolute;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    right: 2rem; /* Stick to the right edge of .details */
+    top: -1rem; /* Stick to the top edge of .details */
+}
+
+.discussions-container .discussion {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+.discussions-container .status label {
+    font-size: 14px;
+}
+
+.discussions-container .status i {
+    margin-right: 4px;
+    color: var(--intro);
+}
+
+.discussion .topic label {
+    color: var(--text4);
+    font-size: 16px;
+}
+
+.discussion .topic i {
+    transform: rotate(-180deg);
+    margin-right: 4px;
+    color: var(--text4);
+    font-size: 12px;
+}
+
+.discussion .topic p {
+    color: var(--text4);
+    margin-top: 4px;
+}
+
+.profile-stack {
+    position: relative;
+    width: 30px; /* Set the width of the container */
+    height: 30px; /* Set the height of the container */
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+  
+.profile-image1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Make each image cover the entire container */
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio */
+    border: 2px solid #fff; /* Add a border to separate images */
+    border-radius: 50%; /* Round the corners for a circular effect */
+}
+
+.profile-image2 {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 100%; /* Make each image cover the entire container */
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio */
+    border: 2px solid #fff; /* Add a border to separate images */
+    border-radius: 50%; /* Round the corners for a circular effect */
+}
+
+.profile-image3 {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: 100%; /* Make each image cover the entire container */
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio */
+    border: 2px solid #fff; /* Add a border to separate images */
+    border-radius: 50%; /* Round the corners for a circular effect */
+}
+
+.discussion .comment label {
+    color: var(--text4);
+    font-size: 14px;
+}
+
+.discussion .comment i {
+    margin-right: 4px;
+}
+
+.btn-field {
+    text-align: center;
+}
+
+.btn-field button {
+    width: 250px;
+    height: 50px;
+    box-shadow: 1px 4px 5px #b4b1b1;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--cold);
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 65% 25%;
+}
+
+.options div {
+    margin-bottom: 16px;
+    margin-left: 64px;
+    cursor: pointer;
+}
+
+.options label {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.options i,
+.status-list i {
+    margin-right: 8px;
+}
+
+.options #check {
+    color: var(--cold);
+}
+
+.line {
+    width: 250px;
+    height: 1px;
+    background: #808080;
+    margin-left: 64px;
+}
+
+.status-list {
+    margin-left: 64px;
+    margin-top: 16px;
+}
+
+.status-list p {
+    margin: 16px 0px;
+}
+
+.status-list #intro {
+    color: var(--intro);
+}
+
+.status-list #important {
+    color: var(--important);
+}
+
+.status-list #faq {
+    color: var(--faq);
+}
+
+.status-list #annoucement {
+    color: var(--annouce);
+}

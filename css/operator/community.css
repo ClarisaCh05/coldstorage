@@ -1,0 +1,96 @@
+.sidebar.active .headLine {
+    position: relative;
+    height: 1px;
+    background: var(--line);
+    top: 60px;
+    left: 17.5rem;
+    width: calc(78vw - 20px);
+    transition: all 300ms ease-in-out;
+    z-index: 2;
+}
+
+.sidebar .headLine {
+    position: relative;
+    height: 1px;
+    background: var(--line);
+    top: 60px;
+    left: 17.5rem;
+    width: calc(98vw - 60px);
+    transition: all 300ms ease-in-out;
+    z-index: 2;
+}
+
+.rounded-img {
+    border-radius: 50%; /* Set a border radius of 50% for a circular shape */
+    width: 68px; /* Set the width of the image */
+    height: 70px; /* Set the height of the image */
+    margin: 0px 24px;
+    margin-top: 16px;
+}
+
+.topic-container {
+    display: grid;
+    grid-template-columns: 15% 75%;
+    border: 1px solid var(--box);
+    border-radius: 11px;
+    padding: 16px;
+    margin-bottom: 16px;
+    width: 94%;
+    height: 150px;
+    position: relative;
+    box-shadow: 1px 4px 5px #b4b1b1;
+    cursor: pointer;
+}
+
+.topic-container .line {
+    height: 1px;
+    background: #ddd;
+}
+
+.topic h2 {
+    color: var(--text5);
+    margin-bottom: 8px;
+}
+
+.topic p {
+    color: var(--text5);
+    margin-top: 8px;
+}
+
+.rounded-img2 {
+    border-radius: 50%; /* Set a border radius of 50% for a circular shape */
+    width: 50px; /* Set the width of the image */
+    height: 50px; /* Set the height of the image */
+    margin: 0px 24px;
+    margin-top: 24px;
+}
+
+.reply {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    border-bottom: 1px solid #ddd;
+    width: 94%;
+}
+
+.reply .text {
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.reply .text .name {
+    color: var(--text6);
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 24px;
+}
+
+.reply .text span {
+    color: var(--text5);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.reply .text h3 {
+    color: var(--text5);
+    margin-top: 8px;
+}

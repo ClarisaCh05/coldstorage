@@ -1,0 +1,44 @@
+.table-section table {
+    border: 1px solid white;
+    border-radius: 11px;
+    height: 100%;
+    border-spacing: 0px;
+    width: 100%;
+    padding-right: 16px;
+}
+
+.table-section tbody th {
+    color: white;
+    text-align: left;
+    padding-left: 16px;
+}
+
+.table-section thead td {
+    text-align: center;
+}
+
+.table-section thead th:first-child{
+    border-top-left-radius: 11px;
+}
+
+.table-section thead td:last-child {
+    border-top-right-radius: 11px;
+}
+
+.table-section tbody .last {
+    border-bottom-left-radius: 11px;
+}
+
+.table-section tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 11px;
+}
+.table-section tbody td {
+    text-align: center;
+}
+.table-section th, td {
+    border: 2px solid white;
+    background-color: var(--cold);
+    width: 10rem;
+    height: 3rem;
+}
+

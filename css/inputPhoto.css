@@ -1,0 +1,42 @@
+.photo-inp {
+    height: 150px;
+    margin-top: 16px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 16.5rem 150px;
+}
+
+#photo, #photo1, #photo2 {
+    display: none;
+}
+
+.photo-inp {
+    display: inline-flex;
+}
+
+#inpLabel {
+    cursor: pointer;
+    border: 1px solid var(--text2);
+    border-radius: 8px;
+    height: 150px;
+    width: 250px;
+    margin-right: 16px;
+    text-align: center;
+    padding: 16px;
+}
+
+#inpLabel-add {
+    cursor: pointer;
+    border-radius: 8px;
+    background: #E0E0E0;
+    height: 150px;
+    width: 250px;
+    margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
